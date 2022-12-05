@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.estrenos {
+    display: grid;
+    padding: 5%;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-auto-rows: 500px; */
+    gap: 10px;
+    width: 100%;    
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+figure {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+figure .texto {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.amazon {
+    background: rgba(0, 170, 226, 0.7);
+}
+.hbo {
+    background: rgba(70, 3, 99, 0.7);
+}
+.netflix {
+    background: rgba(125, 3, 3, 0.7);
+}
+.disney {
+    background: rgba(26, 76, 175, 0.7);
+}
+.star {
+    background: rgba(184, 88, 4, 0.7);
+}
+.apple {
+    background: rgba(23, 23, 23, 0.7);
+}
+.crunchy {
+    background: rgba(245, 123, 32, 0.7);
+}
+.vix {
+    background: rgba(255, 89, 0, 0.7);
+}
+.claro {
+    background: rgba(213, 43, 30, 0.7);
+}
+.paramount {
+    background: rgba(0, 70, 216, 0.7);
+}
+
+h2 {
+    margin-top: 80px;
+    font-size: 40px;
+}
+
+p {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+figure .amazont {
+    color: #162B3A
+}
+figure .hbot {
+    color: #8c3be8
+}
+figure .netflixt {
+    color: #330505
+}
+figure .disneyt {
+    color: #97c7e8
+}
+figure .start {
+    color: #5f2702
+}
+figure .applet {
+    color: #888686
+}
+figure .crunchyt {
+    color: #fad3a4
+}
+figure .vixt {
+    color: #f0c9b1
+}
+figure .clarot {
+    color: #4b0303
+}
+figure .paramountt {
+    color: #a9d0ec
+}
+
+
+figure:hover > .texto{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+@media (max-width: 720px) {
+    .estrenos {
+    grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 1022px) {
+    .estrenos {
+    grid-template-columns: 2fr;
+}
+}
