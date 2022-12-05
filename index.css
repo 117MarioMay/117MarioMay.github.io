@@ -131,8 +131,8 @@ figure:hover > .texto{
 }
 }
 
-@media (max-width: 1022px) {
-    .estrenos {
+/* @media (max-width: 1022px) { */
+    /* .estrenos {
     grid-template-columns: 2fr;
 }
-}
+} */
