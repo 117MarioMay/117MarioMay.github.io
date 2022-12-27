@@ -2,6 +2,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url(black.jpg);
+    background-size: cover;
+}
+
+.navegacion {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: none;    
+}
+
+h1 {
+    line-height: 30px;
+    font-family: 'Mina', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #365899 0%, #992a09 35%, #a76c51 85%, #a76c51 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 5%;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: 5px;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Mina', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #365899 0%, #992a09 35%, #a76c51 85%, #a76c51 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bolder;
+}
+
+section {
+    background: none;
 }
 
 .estrenos {
@@ -10,7 +48,9 @@
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 500px;
     gap: 10px;
-    width: 100%;    
+    width: 100%;
+    
+    
 }
 
 img {
@@ -18,6 +58,7 @@ img {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+    
 
 }
 
@@ -25,12 +66,14 @@ figure {
     width: 100%;
     height: 100%;
     transition: all 500ms ease-out;
+    
 }
 
 .figure {
     position: relative;
     overflow: hidden;
     border-radius: 20px;
+    
 }
 
 figure .texto {
@@ -43,33 +86,44 @@ figure .texto {
     visibility: hidden;
     text-align: center;
 }
+
 .amazon {
     background: rgba(0, 170, 226, 0.7);
 }
+
 .hbo {
     background: rgba(70, 3, 99, 0.7);
 }
+
 .netflix {
     background: rgba(125, 3, 3, 0.7);
 }
+
 .disney {
     background: rgba(26, 76, 175, 0.7);
+    
 }
+
 .star {
     background: rgba(184, 88, 4, 0.7);
 }
+
 .apple {
     background: rgba(23, 23, 23, 0.7);
 }
+
 .crunchy {
     background: rgba(245, 123, 32, 0.7);
 }
+
 .vix {
     background: rgba(255, 89, 0, 0.7);
 }
+
 .claro {
     background: rgba(213, 43, 30, 0.7);
 }
+
 .paramount {
     background: rgba(0, 70, 216, 0.7);
 }
@@ -77,66 +131,69 @@ figure .texto {
 h2 {
     margin-top: 80px;
     font-size: 40px;
+    background: none;
 }
 
 p {
     font-size: 25px;
     font-weight: bold;
     margin: 10px;
+    background: none;
 }
 
 figure .amazont {
     color: #162B3A
 }
+
 figure .hbot {
     color: #8c3be8
 }
+
 figure .netflixt {
     color: #330505
 }
+
 figure .disneyt {
     color: #97c7e8
 }
+
 figure .start {
     color: #5f2702
 }
+
 figure .applet {
     color: #888686
 }
+
 figure .crunchyt {
     color: #fad3a4
 }
+
 figure .vixt {
     color: #f0c9b1
 }
+
 figure .clarot {
     color: #4b0303
 }
+
 figure .paramountt {
     color: #a9d0ec
 }
 
 
-figure:hover > .texto{
+figure:hover>.texto {
     opacity: 1;
     visibility: visible;
 }
 
-
+div {
+    background: none;
+}
 
 
 @media (max-width: 720px) {
     .estrenos {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
 }
-}
-
-/* @media (max-width: 1022px) { */
-    /* .estrenos {
-    grid-template-columns: 2fr;
-}
-<<<<<<< HEAD
-} */
-=======
-}
->>>>>>> f447a7f73cb283df3d0f3b6993d5075f4f6d6368
