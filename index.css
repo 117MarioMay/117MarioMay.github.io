@@ -21,10 +21,11 @@ nav {
     margin: 15px;
 }
 
-.menu li{
+.menu li {
     align-items: center;
     background: none;
 }
+
 ul {
     width: 75%;
     background: none;
@@ -56,7 +57,7 @@ section {
     grid-template-columns: repeat(4, 1fr);
     /* grid-auto-rows: 500px; */
     gap: 20px;
-    width: 100%;    
+    width: 100%;
 }
 
 img {
@@ -70,14 +71,14 @@ figure {
     width: 100%;
     height: 100%;
     transition: all 500ms ease-out;
-    
+
 }
 
 .figure {
     position: relative;
     overflow: hidden;
     border-radius: 20px;
-    
+
 }
 
 figure .texto {
@@ -105,7 +106,6 @@ figure .texto {
 
 .disney {
     background: rgba(26, 76, 175, 0.7);
-    
 }
 
 .star {
@@ -130,6 +130,14 @@ figure .texto {
 
 .paramount {
     background: rgba(0, 70, 216, 0.7);
+}
+
+.mubi {
+    background: rgba(108, 123, 209, 0.7);
+}
+
+.cine {
+    background: rgba(95, 168, 151, 0.7);
 }
 
 h2 {
@@ -195,6 +203,13 @@ figure .paramountt {
     color: white;
 }
 
+figure .mubit {
+    color: white;
+}
+
+figure .cinet {
+    color: rgb(36, 28, 29);
+}
 
 figure:hover>.texto {
     opacity: 1;
